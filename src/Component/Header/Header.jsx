@@ -1,18 +1,19 @@
 import React from "react";
+import "./Header.css";
 import Logo from "../../../public/logo.png";
 
 const Header = () => {
   return (
     <section className="h-wrapper">
-      <div className="h-container">
+      <div className="h-container flexCenter paddings innerWidth">
         <img src={Logo} alt="" width={100} />
 
-        <div className="h-menu">
+        <div className="h-menu flexCenter">
           <a href="">Residencies</a>
           <a href="">Our Value</a>
           <a href="">Contact Us</a>
           <a href="">Get Started</a>
-          <button>
+          <button className="button">
             <a href="">Contact</a>
           </button>
         </div>
