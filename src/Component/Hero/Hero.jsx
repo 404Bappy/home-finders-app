@@ -1,12 +1,19 @@
- import React from "react";
+import React from "react";
 import "./Hero.css";
 
 const Hero = () => {
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
-        <div className="hero-left">Left Section</div>
-
+        {/* HERO LEFT SECTIONS */}
+        <div className="hero-left">
+          <div className="hero-title">
+            <h1>
+              Discover <br /> Most Suitable <br /> Property
+            </h1>
+          </div>
+        </div>
+        {/* HERO RIGHT SECTIONS */}
         <div className="hero-right flexCenter">
           <div className="image-container">
             <img src="./hero-image.png" alt="" />
