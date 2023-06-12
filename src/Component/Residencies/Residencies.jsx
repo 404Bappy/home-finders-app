@@ -42,7 +42,7 @@ export default Residencies;
 const SliderButtons = () => {
   const swiper = useSwiper();
   return (
-    <div className="r-btn">
+    <div className="flexCenter r-btn">
       <button onClick={() => swiper.slidePrev()}>&lt;</button>
       <button onClick={() => swiper.slideNext()}>&gt;</button>
     </div>
