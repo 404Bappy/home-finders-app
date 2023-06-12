@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./Residencies.css";
+import { SliderSettingsPRO } from "../../utils/sidercommon";
 import data from "../../utils/slider.json";
-import { sliderSettings } from "../../utils/Common";
 
 const Residencies = () => {
   return (
@@ -14,7 +14,8 @@ const Residencies = () => {
           <span className="primaryText">Popular Residencies</span>
         </div>
 
-        <Swiper {...sliderSettings}>
+        <Swiper {...SliderSettingsPRO}>
+          <SliderButtons />
           {data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="r-card flexColStart">
@@ -37,3 +38,13 @@ const Residencies = () => {
 };
 
 export default Residencies;
+
+const SliderButtons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="r-btn">
+      <button onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
+    </div>
+  );
+};

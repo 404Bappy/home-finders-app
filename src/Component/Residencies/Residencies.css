@@ -1,3 +1,7 @@
+.residencies-container {
+  overflow: hidden;
+}
+
 .r-head {
   margin-bottom: 2rem;
 }
@@ -36,6 +40,6 @@
     rgba(136, 160, 255, 0.46) 217.91%
   );
 }
-.swiiper-horixontal {
+.swiper-horizontal {
   overflow: visible;
 }
